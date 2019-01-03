@@ -11,18 +11,49 @@
 
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 3.5rem;
 
 		&__img {
 			width: 100%;
 			grid-column: 1 / -1;
+			grid-row: 1 / 2;
+			z-index: 10;
 		}
 
 		&__like {
-
+			grid-column: 2 / -1;
+			grid-row: 1 / 2;
+			fill: $color-primary;
+			width: 2.5rem;
+			height: 2.5rem;
+			z-index: 20;
+			justify-self: end;
+			margin: 1rem; 
 		}
 
 		&__name {
 			grid-column: 1 / -1;
+			grid-row: 1 / 2;
+			z-index: 30;
+			justify-self: center;
+			align-self: end;
+
+			transform: translateY(50%);
+
+			font-family: $font-display;
+			font-size: 1.6rem;
+			text-align: center;
+			background-color: $color-secondary;
+			color: #fff;
+			font-weight: 400;
+			padding: 1.25rem;
+			width: 80%;
+			
+		}
+
+		&__location,
+		&__rooms {
+			margin-top: 2.5rem;
 		}
 
 		&__location,
