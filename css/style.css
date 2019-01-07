@@ -93,7 +93,7 @@ body {
     .sidebar .nav-btn::before {
       transform: translateY(-1.5rem); }
     .sidebar .nav-btn::after {
-      transform: translateY(1.5rem); }
+      transform: translateY(1.3rem); }
 
 .header {
   background-color: #54483A;
